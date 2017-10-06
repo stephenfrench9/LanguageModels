@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class TestLanguageModel {
+public class mainScript {
 
    public static void main(String[] args) throws FileNotFoundException, Exception {
       int LAST = 403;
@@ -12,8 +12,8 @@ public class TestLanguageModel {
       
       
       //BaselineModel languageModel = new BaselineModel();
-      RealHmm languageModel = new RealHmm();
-      //HmmDeriv languageModel = new HmmDeriv();
+      //RealHmm languageModel = new RealHmm();
+      HmmDeriv languageModel = new HmmDeriv();
       //SimpleProduct languageModel = new SimpleProduct();
       
       
@@ -29,7 +29,7 @@ public class TestLanguageModel {
       //read and tag files, one at a time
       int filesProcessed = 0;
       for(int i = FIRST; i <= LAST; i++ ) {
-         File inFile = new File("src\\test_data\\childhood (" + i + ").txt");
+         File inFile = new File("test_data\\childhood (" + i + ").txt");
          Scanner read = new Scanner(inFile);
          
          boolean go = true;
