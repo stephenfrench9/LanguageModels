@@ -34,7 +34,7 @@ public class RealHmm {
       
    }
    
-   public static ArrayList<String> tag(ArrayList<String> sentence) throws Exception {
+   public ArrayList<String> tag(ArrayList<String> sentence) throws Exception {
       
       //the tag method in MatrixGenerator object is non-static
       //but, hte tag method in hmm is not static. It is called from main. But that is ok. 
