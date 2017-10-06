@@ -13,4 +13,4 @@ A model which is structurally similiar to the Hidden Markov Model is used.
 ## Simple Product Maximization
 A model which solves the same maximization problem as a Hidden Markov Model, but uses a different computational strategy. 
 ## Baseline Model
-Applies the most frequently observed part-of-speech to any given word. 
+Applies the most frequently observed part-of-speech to any given word,. 
