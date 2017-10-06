@@ -12,8 +12,8 @@ public class mainScript {
       
       
       //BaselineModel languageModel = new BaselineModel();
-      //RealHmm languageModel = new RealHmm();
-      HmmDeriv languageModel = new HmmDeriv();
+      RealHmm languageModel = new RealHmm();
+      //HmmDeriv languageModel = new HmmDeriv();
       //SimpleProduct languageModel = new SimpleProduct();
       
       
@@ -29,7 +29,7 @@ public class mainScript {
       //read and tag files, one at a time
       int filesProcessed = 0;
       for(int i = FIRST; i <= LAST; i++ ) {
-         File inFile = new File("test_data\\childhood (" + i + ").txt");
+         File inFile = new File("src\\test_data\\childhood (" + i + ").txt");
          Scanner read = new Scanner(inFile);
          
          boolean go = true;
